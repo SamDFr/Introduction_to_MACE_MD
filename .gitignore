@@ -1,0 +1,14 @@
+.DS_Store
+.ipynb_checkpoints/
+__pycache__/
+.pycache/
+.matplotlib/
+.venv/
+outputs/
+legacy/
+models/*.model
+!models/README.md
+*.traj
+*.log
+*.vasp
+*.XDATCAR

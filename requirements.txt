@@ -1,0 +1,8 @@
+ase>=3.23
+jupyterlab>=4.0
+mace-torch
+matplotlib>=3.8
+nglview
+numpy>=1.26
+torch-dftd
+tqdm>=4.66
