@@ -12,6 +12,8 @@ This repository contains two generic notebooks for running molecular dynamics wi
   Directory for MACE checkpoint files.
 - `requirements.txt`
   Minimal Python dependencies for the notebooks.
+- `outputs/`
+  Runtime-generated files, separated by notebook in subdirectories.
 
 ## Environment setup
 
@@ -88,7 +90,7 @@ Main features:
 - ZPE-based initialization of the incident molecule
 - optional early stop of the NVE trajectory when the molecule reaches again its initial height above the surface
 - export of the MD trajectory in `.xyz`
-- interactive trajectory viewer at the end
+- optional interactive trajectory viewing if your notebook frontend handles `nglview` reliably
 
 Important parameter groups:
 
@@ -108,5 +110,7 @@ Important parameter groups:
 ## Notes
 
 - The notebooks save trajectories in both ASE `.traj` and exported `.xyz` form.
+- Notebook 1 writes into `outputs/01_mace_foundation_models/`.
+- Notebook 2 writes into `outputs/02_mace_molecule_surface_zpe/`.
 - For periodic systems, center-of-mass drift is removed, but rigid-body `ZeroRotation` is skipped because it is not meaningful under PBC.
-- The interactive viewer depends on `nglview` working in your notebook frontend.
+- Notebook 2 keeps the interactive viewer disabled in the saved file because it has been unstable in some notebook frontends.
