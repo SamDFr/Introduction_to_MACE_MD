@@ -17,9 +17,11 @@ This repository contains two generic notebooks for running molecular dynamics wi
 
 ## Environment setup
 
-Create a local virtual environment and install the dependencies:
+Clone the repository, then create a local virtual environment and install the dependencies:
 
 ```bash
+git clone https://github.com/SamDFr/Introduction_to_MACE_MD.git
+cd Introduction_to_MACE_MD
 python3 -m venv .venv
 source .venv/bin/activate
 python3 -m pip install -r requirements.txt
